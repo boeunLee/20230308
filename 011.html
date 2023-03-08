@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-실습</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows: 3fr 1fr 2fr;
+            grid-template-areas:
+            "a a b"
+            "c d b"
+            "e f f";
+            width: 500px;
+            height: 500px;
+            gap:10px;
+        }
+        .a{
+            grid-area: a;
+            background: blue;
+        }
+        .b{
+            grid-area: b;
+            background: gold;
+        }
+        .c{
+            grid-area: c;
+            background: purple;
+        }
+        .d{
+            grid-area: d;
+            background: orange;
+        }
+        .e{
+            grid-area: e;
+            background: red;
+        }
+        .f{
+            grid-area: f;
+            background: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "a"></div>
+        <div class = "b"></div>
+        <div class = "c"></div>
+        <div class = "d"></div>
+        <div class = "e"></div>
+        <div class = "f"></div>
+    </div>
+
+</body>
+
+</html>
